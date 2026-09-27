@@ -174,7 +174,7 @@
       slug: "heart-risk",
       title: "Heart Risk Prediction",
       category: "ai",
-      categoryLabel: "AI & Data",
+      categoryLabel: "Machine Learning",
       context: "Machine learning project",
       period: "Sep - Dec 2025",
       short: "An interactive workspace for risk prediction, risk levels and similar-patient clustering.",
@@ -226,6 +226,107 @@
     }
   ];
 
+  const projectTranslations = {
+    talenthub: {
+      categoryLabel: "Cloud & DevOps",
+      context: "Stage FelCloud",
+      period: "Juil. - Sept. 2026",
+      short: "Une plateforme de production déployée sur trois VM FelCloud avec livraison automatisée, observabilité et restauration testée.",
+      overview: "TalentHub est une plateforme de gestion de projets IEEE déployée sur FelCloud avec des machines virtuelles distinctes pour le bastion, l’application et PostgreSQL. Son architecture de production exécute dix services conteneurisés derrière un réseau privé et un équilibrage de charge Caddy.",
+      role: "J’ai pris en charge le volet Cloud et DevOps au sein d’une équipe de trois personnes, de l’automatisation de l’infrastructure au déploiement, au monitoring et à la restauration.",
+      imageLabels: ["Architecture de production et workflow DevOps", "Accueil du produit", "Workflow des projets", "Intégration continue", "Déploiement continu", "Monitoring Prometheus", "Sauvegarde et restauration"],
+      highlights: ["Configuration d’un GitLab Runner auto-hébergé avec Podman pour des environnements de développement éphémères.", "Automatisation des contrôles qualité, de la livraison des images, des migrations, de la validation de santé et du rollback.", "Mise en place de Prometheus, Grafana et Alertmanager avec sept services d’observabilité.", "Validation des sauvegardes et restaurations PostgreSQL sur OpenStack Swift avec contrôle d’intégrité SHA-256."]
+    },
+    "fyp-grading": {
+      categoryLabel: "Cloud & Full-Stack",
+      context: "Stage SQU · Oman",
+      period: "Juin - Juil. 2026",
+      short: "Une plateforme traçable d’évaluation des projets de fin d’études, conteneurisée et déployée sur Microsoft Azure.",
+      overview: "La plateforme centralise l’évaluation des projets de fin d’études et remplace un processus fragmenté basé sur Excel et MATLAB. Elle réunit une API Spring Boot, une interface React et une base PostgreSQL dans un déploiement Azure reproductible.",
+      role: "J’ai contribué au développement, à la conteneurisation Docker, aux workflows GitHub Actions, au déploiement HTTPS et à la préparation du transfert d’infrastructure.",
+      imageLabels: ["Application en ligne sur Azure", "Pipeline de livraison réussi", "Exécution Docker Compose", "Vérification HTTPS", "Machine virtuelle Azure"],
+      highlights: ["Remplacement d’un processus Excel et MATLAB par une évaluation multi-rôle traçable.", "Automatisation de la publication des conteneurs frontend et backend avec GitHub Actions.", "Déploiement d’un environnement Docker Compose supervisé derrière HTTPS."],
+      linkLabels: ["Dépôt GitHub"]
+    },
+    "eco-resource": {
+      categoryLabel: "Plateforme cloud-native",
+      context: "Projet cloud ESPRIT",
+      period: "Oct. 2025 - Juin 2026",
+      short: "Une plateforme cloud hybride combinant OpenStack, Kubernetes, Azure et l’observabilité de l’infrastructure.",
+      overview: "Eco-Resource connecte les entreprises qui échangent des ressources industrielles réutilisables. Son architecture hybride associe un frontend Angular sur Azure à un backend Spring Boot exécuté sur Kubernetes et OpenStack.",
+      role: "Je me suis concentrée sur l’architecture du cloud privé, l’automatisation Kubernetes, la CI/CD, l’observabilité et les parcours Angular basés sur les rôles.",
+      imageLabels: ["Analyses opérationnelles", "Infrastructure OpenStack", "Exécution Kubernetes", "Monitoring Grafana"],
+      highlights: ["Conception d’une infrastructure OpenStack avec réseaux isolés et stockage persistant.", "Automatisation d’un cluster Kubernetes multi-nœuds avec Ansible.", "Connexion du frontend Azure au backend Spring Boot sur Kubernetes.", "Mise en place de l’observabilité avec Prometheus, Grafana et Zabbix."],
+      linkLabels: ["Frontend", "Backend"]
+    },
+    "test-traceability": {
+      categoryLabel: "Génie logiciel",
+      context: "Stage Sagemcom",
+      period: "Janv. - Juin 2024",
+      short: "Une plateforme qualité centralisant les traces de tests firmware, les indicateurs de production et le reporting Power BI.",
+      overview: "La plateforme offre aux équipes qualité un espace unique pour analyser les traces de tests firmware, suivre les numéros de série et surveiller les indicateurs de production via des tableaux de bord opérationnels et Power BI.",
+      role: "J’ai développé les parcours Angular, les services .NET, l’accès aux données SQL Server et le reporting Power BI.",
+      imageLabels: ["Tableau de bord qualité", "Analyse des traces", "Authentification sécurisée"],
+      highlights: ["Centralisation des résultats de tests et de l’analyse des traces firmware.", "Ajout de l’authentification, du contrôle d’accès et des workflows opérationnels.", "Création d’un suivi qualité interactif avec Power BI."],
+      linkLabels: ["Frontend", "Backend"]
+    },
+    gymify: {
+      categoryLabel: "Web & Desktop",
+      context: "Projet d’équipe ESPRIT",
+      period: "Janv. - Mai 2025",
+      short: "Un produit web et desktop coordonné pour gérer les abonnements, cours, événements et interactions communautaires.",
+      overview: "Gymify réunit les opérations d’une salle de sport et les services destinés aux membres dans des expériences web et desktop connectées à une base centrale.",
+      role: "J’ai contribué aux workflows métier, aux interfaces utilisateur, aux fonctions temps réel et à l’assistance intelligente.",
+      imageLabels: ["Expérience membre", "Marketplace", "Assistant IA", "Calendrier des cours"],
+      highlights: ["Gestion multi-rôle des abonnements, cours, événements et marketplace.", "Connexion des applications web Symfony et desktop JavaFX.", "Ajout de communications temps réel et d’interactions assistées par IA."],
+      linkLabels: ["Dépôt web", "Dépôt desktop"]
+    },
+    cafeconnect: {
+      categoryLabel: "Web & Mobile",
+      context: "Stage BeeCoders",
+      period: "Juil. - Sept. 2023",
+      short: "Des parcours web et mobile connectés pour gérer les produits, commandes et factures via une API REST partagée.",
+      overview: "CafeConnect aide les équipes d’un café à gérer le catalogue, les commandes et la facturation depuis des clients web et mobile connectés au même backend.",
+      role: "J’ai développé les fonctionnalités full-stack avec Angular, Spring Boot, Flutter et MySQL.",
+      imageLabels: ["Gestion des commandes", "Catalogue produits", "Authentification"],
+      highlights: ["Gestion unifiée des produits, catégories, commandes et factures.", "Services REST partagés entre les interfaces web et mobile.", "Sécurisation de l’accès aux opérations du café."]
+    },
+    "heart-risk": {
+      categoryLabel: "Machine Learning",
+      context: "Projet de machine learning",
+      period: "Sept. - Déc. 2025",
+      short: "Un espace interactif pour prédire le risque, analyser ses niveaux et regrouper les profils de patients similaires.",
+      overview: "L’application compare des approches supervisées et non supervisées dans une interface unique destinée à l’exploration par patient et à l’aide à la décision.",
+      role: "J’ai préparé les données, comparé les modèles et présenté les résultats dans une interface Python interactive.",
+      imageLabels: ["Tableau de bord", "Prédiction binaire", "Clusters de patients", "Analyse du niveau de risque"],
+      highlights: ["Workflows de prédiction avec XGBoost et Random Forest.", "Regroupement K-Means de profils patients comparables.", "Résultats visuels, niveaux de risque et analyse de l’importance des variables."],
+      linkLabels: ["Démo en ligne", "Dépôt GitHub"]
+    },
+    foodify: {
+      categoryLabel: "Produit mobile",
+      context: "Projet académique",
+      period: "Oct. - Déc. 2024",
+      short: "Une expérience de restauration multi-rôle pour la découverte, la réservation, la commande et les opérations des restaurateurs.",
+      overview: "Foodify relie la découverte et la commande côté client aux tableaux de bord opérationnels des restaurants dans un même produit mobile.",
+      role: "J’ai conçu et développé des parcours mobiles basés sur les rôles avec FlutterFlow et Firebase.",
+      imageLabels: ["Sélection du rôle", "Découverte des restaurants", "Tableau de bord restaurateur"],
+      highlights: ["Expériences distinctes pour les clients et les restaurateurs.", "Parcours de découverte, réservation et commande.", "Tableaux de bord opérationnels pour la gestion des restaurants."],
+      linkLabels: ["Application en ligne"]
+    }
+  };
+
+  let slideshowCleanups = [];
+  let detailKeyHandler;
+
+  function isFrench() {
+    return window.RANYM_I18N && window.RANYM_I18N.lang === "fr";
+  }
+
+  function localized(project, field) {
+    const translation = projectTranslations[project.slug];
+    return isFrench() && translation && translation[field] ? translation[field] : project[field];
+  }
+
   window.RANYM_PROJECTS = projects;
 
   function escapeHtml(value) {
@@ -249,9 +350,10 @@
     };
     const categoryIcon = categoryIcons[project.category] || "bi-grid";
 
+    const imageLabels = localized(project, "imageLabels") || project.imageLabels;
     const slides = imageSlides.length
       ? imageSlides.map((image, imageIndex) => {
-        const label = project.imageLabels[imageIndex] || "Project screen";
+        const label = imageLabels[imageIndex] || (isFrench() ? "Écran du projet" : "Project screen");
         return '<img class="compact-project-slide ' + (imageIndex === 0 ? "active" : "") + '" src="' + escapeHtml(image) + '" alt="' + escapeHtml(project.title + " - " + label) + '" loading="' + (projectIndex < 3 && imageIndex === 0 ? "eager" : "lazy") + '">';
       }).join("")
       : visualSlides.map((slide, slideIndex) =>
@@ -270,21 +372,21 @@
     ).join("");
 
     const mediaCount = imageSlides.length
-      ? '<span class="compact-project-count" aria-label="' + imageSlides.length + ' project screenshots"><i class="bi bi-images" aria-hidden="true"></i><span>' + imageSlides.length + '</span></span>'
-      : '<span class="compact-project-count" aria-label="Project overview"><i class="bi bi-diagram-3" aria-hidden="true"></i></span>';
+      ? '<span class="compact-project-count" aria-label="' + imageSlides.length + (isFrench() ? ' captures du projet' : ' project screenshots') + '"><i class="bi bi-images" aria-hidden="true"></i><span>' + imageSlides.length + '</span></span>'
+      : '<span class="compact-project-count" aria-label="' + (isFrench() ? 'Aperçu du projet' : 'Project overview') + '"><i class="bi bi-diagram-3" aria-hidden="true"></i></span>';
 
-    return '<a class="compact-project-card category-' + escapeHtml(project.category) + '" data-rotating-project data-category="' + escapeHtml(project.category) + '" href="project-details.html?project=' + encodeURIComponent(project.slug) + '" aria-label="View ' + escapeHtml(project.title) + ' project details">' +
+    return '<a class="compact-project-card category-' + escapeHtml(project.category) + '" data-rotating-project data-category="' + escapeHtml(project.category) + '" href="project-details.html?project=' + encodeURIComponent(project.slug) + '" aria-label="' + (isFrench() ? 'Voir le projet ' : 'View ') + escapeHtml(project.title) + (isFrench() ? '' : ' project details') + '">' +
       '<div class="compact-project-media">' +
         slides +
-        '<span class="compact-project-type"><i class="bi ' + escapeHtml(categoryIcon) + '" aria-hidden="true"></i>' + escapeHtml(project.categoryLabel) + '</span>' +
+        '<span class="compact-project-type"><i class="bi ' + escapeHtml(categoryIcon) + '" aria-hidden="true"></i>' + escapeHtml(localized(project, "categoryLabel")) + '</span>' +
         '<div class="project-slide-dots">' + dots + '</div>' +
         mediaCount +
       '</div>' +
       '<div class="compact-project-body">' +
-        '<div class="compact-project-meta"><span><i class="bi bi-briefcase" aria-hidden="true"></i>' + escapeHtml(project.context) + '</span><span>' + escapeHtml(project.period) + '</span></div>' +
         '<h3>' + escapeHtml(project.title) + '</h3>' +
-        '<p>' + escapeHtml(project.short) + '</p>' +
-        '<div class="compact-project-footer"><div class="compact-project-tags">' + tags + '</div><span class="compact-project-open" aria-hidden="true"><i class="bi bi-arrow-up-right"></i></span></div>' +
+        '<div class="compact-project-meta"><span><i class="bi bi-briefcase" aria-hidden="true"></i>' + escapeHtml(localized(project, "context")) + '</span><span><i class="bi bi-calendar3" aria-hidden="true"></i>' + escapeHtml(localized(project, "period")) + '</span></div>' +
+        '<p>' + escapeHtml(localized(project, "short")) + '</p>' +
+        '<div class="compact-project-footer"><div class="compact-project-tags">' + tags + '</div><span class="compact-project-open" aria-hidden="true">' + (isFrench() ? 'Voir le projet' : 'View Project') + '<i class="bi bi-arrow-up-right"></i></span></div>' +
       '</div>' +
     '</a>';
   }
@@ -307,6 +409,8 @@
   }
 
   function initCardSlideshows() {
+    slideshowCleanups.forEach(cleanup => cleanup());
+    slideshowCleanups = [];
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     document.querySelectorAll("[data-rotating-project]").forEach((card, cardIndex) => {
@@ -346,6 +450,7 @@
       card.addEventListener("mouseleave", start);
       card.addEventListener("focusin", stop);
       card.addEventListener("focusout", start);
+      slideshowCleanups.push(stop);
       start();
     });
   }
@@ -356,7 +461,7 @@
     const sections = Array.from(document.querySelectorAll("[data-project-section]"));
 
     buttons.forEach(button => {
-      button.addEventListener("click", () => {
+      button.onclick = () => {
         const filter = button.dataset.projectFilter;
         buttons.forEach(item => {
           const isActive = item === button;
@@ -372,7 +477,7 @@
           const sectionCards = Array.from(section.querySelectorAll("[data-category]"));
           section.hidden = !sectionCards.some(card => !card.hidden);
         });
-      });
+      };
     });
   }
 
@@ -384,7 +489,7 @@
     const project = projects.find(item => item.slug === slug);
 
     if (!project) {
-      mount.innerHTML = '<div class="project-not-found"><p>Project not found.</p><a href="portfolio.html">Return to the portfolio</a></div>';
+      mount.innerHTML = '<div class="project-not-found"><p>' + (isFrench() ? 'Projet introuvable.' : 'Project not found.') + '</p><a href="portfolio.html">' + (isFrench() ? 'Retour aux projets' : 'Return to the portfolio') + '</a></div>';
       return;
     }
 
@@ -392,8 +497,9 @@
     document.body.dataset.projectCategory = project.category;
 
     const hasImages = Array.isArray(project.images) && project.images.length > 0;
+    const imageLabels = localized(project, "imageLabels") || project.imageLabels;
     const thumbnails = hasImages ? project.images.map((image, index) =>
-      '<button type="button" class="' + (index === 0 ? "active" : "") + '" data-detail-thumb="' + index + '" aria-label="Show ' + escapeHtml(project.imageLabels[index]) + '">' +
+      '<button type="button" class="' + (index === 0 ? "active" : "") + '" data-detail-thumb="' + index + '" aria-label="' + (isFrench() ? 'Afficher ' : 'Show ') + escapeHtml(imageLabels[index]) + '">' +
         '<img src="' + escapeHtml(image) + '" alt="" loading="lazy">' +
       '</button>'
     ).join("") : "";
@@ -401,10 +507,10 @@
     const gallery = hasImages
       ? '<div class="project-detail-gallery">' +
           '<div class="project-detail-main">' +
-            '<img id="project-detail-image" src="' + escapeHtml(project.images[0]) + '" alt="' + escapeHtml(project.title + " - " + project.imageLabels[0]) + '">' +
-            '<button type="button" class="detail-gallery-button detail-gallery-prev" aria-label="Previous screen"><i class="bi bi-arrow-left"></i></button>' +
-            '<button type="button" class="detail-gallery-button detail-gallery-next" aria-label="Next screen"><i class="bi bi-arrow-right"></i></button>' +
-            '<span id="project-detail-caption">' + escapeHtml(project.imageLabels[0]) + '</span>' +
+            '<img id="project-detail-image" src="' + escapeHtml(project.images[0]) + '" alt="' + escapeHtml(project.title + " - " + imageLabels[0]) + '">' +
+            '<button type="button" class="detail-gallery-button detail-gallery-prev" aria-label="' + (isFrench() ? 'Écran précédent' : 'Previous screen') + '"><i class="bi bi-arrow-left"></i></button>' +
+            '<button type="button" class="detail-gallery-button detail-gallery-next" aria-label="' + (isFrench() ? 'Écran suivant' : 'Next screen') + '"><i class="bi bi-arrow-right"></i></button>' +
+            '<span id="project-detail-caption">' + escapeHtml(imageLabels[0]) + '</span>' +
           '</div>' +
           '<div class="project-detail-thumbs">' + thumbnails + '</div>' +
         '</div>'
@@ -421,25 +527,26 @@
       "<span>" + escapeHtml(technology) + "</span>"
     ).join("");
 
-    const highlights = project.highlights.map(highlight =>
+    const highlights = localized(project, "highlights").map(highlight =>
       '<li><i class="bi bi-check2"></i><span>' + escapeHtml(highlight) + '</span></li>'
     ).join("");
 
-    const links = project.links.map(link =>
-      '<a href="' + escapeHtml(link.url) + '" target="_blank" rel="noopener noreferrer"><i class="bi ' + escapeHtml(link.icon) + '"></i>' + escapeHtml(link.label) + '</a>'
+    const linkLabels = localized(project, "linkLabels") || [];
+    const links = project.links.map((link, index) =>
+      '<a href="' + escapeHtml(link.url) + '" target="_blank" rel="noopener noreferrer"><i class="bi ' + escapeHtml(link.icon) + '"></i>' + escapeHtml(linkLabels[index] || link.label) + '</a>'
     ).join("");
 
     mount.innerHTML =
       '<article class="project-detail-article">' +
         '<header class="project-detail-heading">' +
-          '<div><p>' + escapeHtml(project.categoryLabel) + '</p><h1>' + escapeHtml(project.title) + '</h1></div>' +
-          '<div class="project-detail-context"><span>' + escapeHtml(project.context) + '</span><span>' + escapeHtml(project.period) + '</span></div>' +
+          '<div><p>' + escapeHtml(localized(project, "categoryLabel")) + '</p><h1>' + escapeHtml(project.title) + '</h1></div>' +
+          '<div class="project-detail-context"><span>' + escapeHtml(localized(project, "context")) + '</span><span>' + escapeHtml(localized(project, "period")) + '</span></div>' +
         '</header>' +
         '<div class="project-detail-layout">' +
           gallery +
           '<div class="project-detail-copy">' +
-            '<p class="project-detail-lead">' + escapeHtml(project.overview) + '</p>' +
-            '<div class="project-detail-role"><span>My contribution</span><p>' + escapeHtml(project.role) + '</p></div>' +
+            '<p class="project-detail-lead">' + escapeHtml(localized(project, "overview")) + '</p>' +
+            '<div class="project-detail-role"><span>' + (isFrench() ? 'Ma contribution' : 'My contribution') + '</span><p>' + escapeHtml(localized(project, "role")) + '</p></div>' +
             '<ul class="project-detail-highlights">' + highlights + '</ul>' +
             '<div class="project-detail-tech">' + technologies + '</div>' +
             (links ? '<div class="project-detail-links">' + links + '</div>' : '') +
@@ -447,10 +554,10 @@
         '</div>' +
       '</article>';
 
-    if (hasImages) initDetailGallery(project);
+    if (hasImages) initDetailGallery(project, imageLabels);
   }
 
-  function initDetailGallery(project) {
+  function initDetailGallery(project, imageLabels) {
     const mainImage = document.getElementById("project-detail-image");
     const caption = document.getElementById("project-detail-caption");
     const thumbs = Array.from(document.querySelectorAll("[data-detail-thumb]"));
@@ -465,8 +572,8 @@
       mainImage.classList.add("changing");
       window.setTimeout(() => {
         mainImage.src = project.images[activeIndex];
-        mainImage.alt = project.title + " - " + project.imageLabels[activeIndex];
-        caption.textContent = project.imageLabels[activeIndex];
+        mainImage.alt = project.title + " - " + imageLabels[activeIndex];
+        caption.textContent = imageLabels[activeIndex];
         thumbs.forEach((thumb, thumbIndex) => thumb.classList.toggle("active", thumbIndex === activeIndex));
         mainImage.classList.remove("changing");
       }, 120);
@@ -475,13 +582,20 @@
     thumbs.forEach(thumb => thumb.addEventListener("click", () => showImage(Number(thumb.dataset.detailThumb))));
     previous.addEventListener("click", () => showImage(activeIndex - 1));
     next.addEventListener("click", () => showImage(activeIndex + 1));
-    document.addEventListener("keydown", event => {
+    if (detailKeyHandler) document.removeEventListener("keydown", detailKeyHandler);
+    detailKeyHandler = event => {
       if (event.key === "ArrowLeft") showImage(activeIndex - 1);
       if (event.key === "ArrowRight") showImage(activeIndex + 1);
-    });
+    };
+    document.addEventListener("keydown", detailKeyHandler);
   }
 
   document.addEventListener("DOMContentLoaded", () => {
+    renderCards();
+    renderDetail();
+  });
+
+  document.addEventListener("ranym:languagechange", () => {
     renderCards();
     renderDetail();
   });
