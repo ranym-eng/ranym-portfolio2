@@ -11,22 +11,26 @@
       category: "cloud",
       categoryLabel: "Cloud & DevOps",
       context: "FelCloud internship",
-      period: "Aug - Sep 2026",
-      short: "A production-ready cloud delivery setup with automated releases, monitoring and recoverable data.",
-      overview: "TalentHub is a team-built project operating system that I productionized on FelCloud. Public access, application services and PostgreSQL data were separated across a secure private network.",
-      role: "I owned the Cloud and DevOps workstream within a three-person team.",
+      period: "Jul - Sep 2026",
+      short: "A production platform deployed across three FelCloud VMs with automated delivery, observability and tested recovery.",
+      overview: "TalentHub is an IEEE project management platform deployed on FelCloud across separate bastion, application and PostgreSQL virtual machines. The production architecture runs ten containerized services behind a private network and Caddy load balancing.",
+      role: "I owned the Cloud and DevOps workstream within a three-person team, from infrastructure automation to deployment, monitoring and recovery.",
       images: [
+        "assets/img/projects/talenthub-architecture.png",
         talentBase + "talenthub-01-product home app.png",
         talentBase + "product workoflow.png",
         talentBase + "CI.png",
-        talentBase + "talenthub-05-monitoring.png"
+        talentBase + "CD.png",
+        talentBase + "talenthub-05-monitoring.png",
+        talentBase + "talenthub-06-backup-recovery.png"
       ],
-      imageLabels: ["Product home", "Project workflow", "GitHub Actions CI", "Prometheus monitoring"],
-      technologies: ["FelCloud", "Docker", "GitHub Actions", "GHCR", "Prometheus", "PostgreSQL"],
+      imageLabels: ["Production architecture and DevOps workflow", "Product home", "Project workflow", "Continuous integration", "Continuous deployment", "Prometheus monitoring", "Backup and recovery"],
+      technologies: ["FelCloud", "Podman", "GitLab CI/CD", "GitHub Actions", "Docker", "Caddy", "Prometheus", "OpenStack Swift", "PostgreSQL"],
       highlights: [
-        "Quality gates, immutable Docker images, migrations, health validation and rollback.",
-        "Prometheus monitoring and alerting for web, API and container services.",
-        "Scheduled, checksummed PostgreSQL backups with restore verification."
+        "Configured a self-hosted GitLab Runner with Podman for ephemeral development environments.",
+        "Automated quality gates, image delivery, migrations, health validation and rollback.",
+        "Implemented Prometheus, Grafana and Alertmanager across seven observability services.",
+        "Validated PostgreSQL backups and restores on OpenStack Swift with SHA-256 integrity checks."
       ],
       links: []
     },
@@ -35,17 +39,19 @@
       title: "FYP Grading Platform",
       category: "cloud",
       categoryLabel: "Cloud & Full-Stack",
-      context: "SQU internship",
+      context: "SQU internship · Oman",
       period: "Jun - Jul 2026",
-      short: "A secure grading platform deployed on Azure to replace a fragmented Excel and MATLAB workflow.",
-      overview: "The platform centralizes final-year project evaluation from the first report to the final result. It combines a Spring Boot API, React interface and PostgreSQL database in a containerized Azure deployment.",
-      role: "I contributed across application engineering, Docker packaging, CI/CD, HTTPS deployment and infrastructure handover.",
+      short: "A traceable final-year project evaluation platform containerized and deployed on Microsoft Azure.",
+      overview: "The platform centralizes final-year project evaluation and replaces a fragmented Excel and MATLAB workflow. It combines a Spring Boot API, React interface and PostgreSQL database in a reproducible Azure deployment.",
+      role: "I contributed across application engineering, Docker packaging, GitHub Actions, HTTPS deployment and infrastructure handover.",
       images: [
         fypBase + "1-live-azure-https-application.png",
         fypBase + "2-github-actions-successful-run.png",
+        fypBase + "3-real-docker-compose-status.png",
+        fypBase + "4-real-https-tls-verification.png",
         fypBase + "5-azure-virtual-machine-overview.jpg"
       ],
-      imageLabels: ["Live Azure application", "Successful delivery pipeline", "Azure virtual machine"],
+      imageLabels: ["Live Azure application", "Successful delivery pipeline", "Docker Compose runtime", "HTTPS verification", "Azure virtual machine"],
       technologies: ["Azure", "Docker", "GitHub Actions", "Spring Boot", "React", "PostgreSQL"],
       highlights: [
         "Replaced an Excel and MATLAB process with traceable multi-role evaluation.",
@@ -61,11 +67,11 @@
       title: "Eco-Resource B2B",
       category: "cloud",
       categoryLabel: "Cloud-Native Platform",
-      context: "ESPRIT / AetherOps",
+      context: "ESPRIT cloud project",
       period: "Oct 2025 - Jun 2026",
-      short: "Private cloud, Kubernetes delivery and observability for an industrial circular-economy platform.",
-      overview: "Eco-Resource connects companies that exchange reusable industrial resources. The platform combines marketplace, logistics, traceability, finance and sustainability analytics.",
-      role: "My focus covered cloud architecture, deployment automation, observability and role-based Angular workflows.",
+      short: "A hybrid cloud platform combining OpenStack, Kubernetes, Azure delivery and infrastructure observability.",
+      overview: "Eco-Resource connects companies exchanging reusable industrial resources. Its hybrid architecture combines an Angular frontend on Azure with a Spring Boot backend running on Kubernetes and OpenStack.",
+      role: "My focus covered private-cloud architecture, Kubernetes automation, CI/CD, observability and role-based Angular workflows.",
       images: [
         "assets/img/projects/eco-resource/2analytics.jpeg",
         "assets/img/projects/eco-resource/3openstack.png",
@@ -73,11 +79,12 @@
         "assets/img/projects/eco-resource/5grafana.png"
       ],
       imageLabels: ["Operational analytics", "OpenStack infrastructure", "Kubernetes runtime", "Grafana monitoring"],
-      technologies: ["OpenStack", "Kubernetes", "GitLab CI/CD", "Azure", "Prometheus", "Grafana"],
+      technologies: ["OpenStack", "Kubernetes", "Ansible", "GitLab CI/CD", "Azure", "Prometheus", "Grafana", "Zabbix"],
       highlights: [
-        "Private-cloud foundation with isolated networks, VMs, NFS and high availability.",
-        "Multi-node Kubernetes deployment for the Spring Boot backend.",
-        "Prometheus, Grafana and Zabbix observability across infrastructure and workloads."
+        "Built an OpenStack foundation with isolated networks and persistent storage.",
+        "Automated a multi-node Kubernetes deployment with Ansible.",
+        "Connected the Azure frontend to the Spring Boot backend on Kubernetes.",
+        "Implemented Prometheus, Grafana and Zabbix observability."
       ],
       links: [
         { label: "Frontend", url: "https://github.com/ranym-eng/eco-ressource-b2b-frontend", icon: "bi-github" },
@@ -91,8 +98,8 @@
       categoryLabel: "Software Engineering",
       context: "Sagemcom internship",
       period: "Jan - Jun 2024",
-      short: "A centralized quality portal for manufacturing test traces, serial numbers and production indicators.",
-      overview: "The platform gives quality teams one place to investigate firmware test traces, follow serial numbers and monitor production indicators.",
+      short: "A centralized quality platform for firmware test traces, production indicators and Power BI reporting.",
+      overview: "The platform gives quality teams one place to investigate firmware test traces, follow serial numbers and monitor production indicators through operational and Power BI dashboards.",
       role: "I built Angular workflows, .NET services, SQL Server data access and Power BI reporting.",
       images: [
         "assets/img/projects/sagemcom/2dashboard.png",
@@ -234,6 +241,13 @@
     const imageSlides = Array.isArray(project.images) ? project.images : [];
     const visualSlides = Array.isArray(project.visualSlides) ? project.visualSlides : [];
     const slideCount = imageSlides.length || visualSlides.length;
+    const categoryIcons = {
+      cloud: "bi-cloud-check",
+      software: "bi-code-square",
+      ai: "bi-cpu",
+      mobile: "bi-phone"
+    };
+    const categoryIcon = categoryIcons[project.category] || "bi-grid";
 
     const slides = imageSlides.length
       ? imageSlides.map((image, imageIndex) => {
@@ -255,20 +269,22 @@
       "<span>" + escapeHtml(technology) + "</span>"
     ).join("");
 
-    const mediaLabel = imageSlides.length ? imageSlides.length + " screens" : "Project overview";
+    const mediaCount = imageSlides.length
+      ? '<span class="compact-project-count" aria-label="' + imageSlides.length + ' project screenshots"><i class="bi bi-images" aria-hidden="true"></i><span>' + imageSlides.length + '</span></span>'
+      : '<span class="compact-project-count" aria-label="Project overview"><i class="bi bi-diagram-3" aria-hidden="true"></i></span>';
 
     return '<a class="compact-project-card category-' + escapeHtml(project.category) + '" data-rotating-project data-category="' + escapeHtml(project.category) + '" href="project-details.html?project=' + encodeURIComponent(project.slug) + '" aria-label="View ' + escapeHtml(project.title) + ' project details">' +
       '<div class="compact-project-media">' +
         slides +
-        '<span class="compact-project-type">' + escapeHtml(project.categoryLabel) + '</span>' +
+        '<span class="compact-project-type"><i class="bi ' + escapeHtml(categoryIcon) + '" aria-hidden="true"></i>' + escapeHtml(project.categoryLabel) + '</span>' +
         '<div class="project-slide-dots">' + dots + '</div>' +
-        '<span class="compact-project-count">' + escapeHtml(mediaLabel) + '</span>' +
+        mediaCount +
       '</div>' +
       '<div class="compact-project-body">' +
-        '<div class="compact-project-meta"><span>' + escapeHtml(project.context) + '</span><span>' + escapeHtml(project.period) + '</span></div>' +
+        '<div class="compact-project-meta"><span><i class="bi bi-briefcase" aria-hidden="true"></i>' + escapeHtml(project.context) + '</span><span>' + escapeHtml(project.period) + '</span></div>' +
         '<h3>' + escapeHtml(project.title) + '</h3>' +
         '<p>' + escapeHtml(project.short) + '</p>' +
-        '<div class="compact-project-footer"><div class="compact-project-tags">' + tags + '</div><i class="bi bi-arrow-up-right"></i></div>' +
+        '<div class="compact-project-footer"><div class="compact-project-tags">' + tags + '</div><span class="compact-project-open" aria-hidden="true"><i class="bi bi-arrow-up-right"></i></span></div>' +
       '</div>' +
     '</a>';
   }
@@ -348,7 +364,9 @@
           item.setAttribute("aria-pressed", String(isActive));
         });
         cards.forEach(card => {
-          card.hidden = filter !== "all" && card.dataset.category !== filter;
+          const matchesFilter = filter === "all"
+            || (filter === "other" ? card.dataset.category !== "cloud" : card.dataset.category === filter);
+          card.hidden = !matchesFilter;
         });
         sections.forEach(section => {
           const sectionCards = Array.from(section.querySelectorAll("[data-category]"));
@@ -371,6 +389,7 @@
     }
 
     document.title = project.title + " - Ranym Mejri";
+    document.body.dataset.projectCategory = project.category;
 
     const hasImages = Array.isArray(project.images) && project.images.length > 0;
     const thumbnails = hasImages ? project.images.map((image, index) =>
@@ -456,6 +475,10 @@
     thumbs.forEach(thumb => thumb.addEventListener("click", () => showImage(Number(thumb.dataset.detailThumb))));
     previous.addEventListener("click", () => showImage(activeIndex - 1));
     next.addEventListener("click", () => showImage(activeIndex + 1));
+    document.addEventListener("keydown", event => {
+      if (event.key === "ArrowLeft") showImage(activeIndex - 1);
+      if (event.key === "ArrowRight") showImage(activeIndex + 1);
+    });
   }
 
   document.addEventListener("DOMContentLoaded", () => {
