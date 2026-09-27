@@ -20,7 +20,7 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/css/main.css?v=20260927-12" rel="stylesheet">
+  <link href="assets/css/main.css?v=20260927-13" rel="stylesheet">
 </head>
 
 <body class="resume-page">
@@ -54,23 +54,21 @@
         <h2>Resume</h2>
       </div>
       <div class="container resume-document" data-aos="fade-up" data-aos-delay="100">
-        <div class="resume-document-toolbar">
-          <a href="assets/files/CV_Ranym_Mejri_FR_EN.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i> Open full CV</a>
-          <a href="assets/files/CV_Ranym_Mejri_FR_EN.pdf" download><i class="bi bi-download"></i> Download CV</a>
-        </div>
         <div class="resume-document-viewer" data-resume-viewer tabindex="0" aria-label="Ranym Mejri CV preview">
           <div class="resume-viewer-stage">
             <img class="active" src="assets/img/ranym/cv-document-page-1.png" alt="Ranym Mejri CV - French page" data-resume-page>
             <img src="assets/img/ranym/cv-document-page-2.png" alt="Ranym Mejri CV - English page" data-resume-page>
-            <button class="resume-viewer-arrow resume-viewer-previous" type="button" data-resume-previous aria-label="Previous CV page"><i class="bi bi-chevron-left"></i></button>
-            <button class="resume-viewer-arrow resume-viewer-next" type="button" data-resume-next aria-label="Next CV page"><i class="bi bi-chevron-right"></i></button>
           </div>
           <div class="resume-viewer-footer">
-            <span><i class="bi bi-file-earmark-text"></i> Ranym Mejri CV</span>
             <div class="resume-viewer-pagination">
-              <button type="button" data-resume-previous aria-label="Previous CV page"><i class="bi bi-arrow-left"></i></button>
-              <span><strong data-resume-current>1</strong> / 2</span>
-              <button type="button" data-resume-next aria-label="Next CV page"><i class="bi bi-arrow-right"></i></button>
+              <button type="button" data-resume-previous aria-label="Previous CV page" title="Previous page"><i class="bi bi-chevron-left"></i></button>
+              <span><strong data-resume-current>1</strong> / <span data-resume-total>2</span></span>
+              <button type="button" data-resume-next aria-label="Next CV page" title="Next page"><i class="bi bi-chevron-right"></i></button>
+            </div>
+            <div class="resume-viewer-actions">
+              <a href="assets/files/CV_Ranym_Mejri_FR_EN.pdf" download aria-label="Download CV" title="Download CV"><i class="bi bi-download"></i></a>
+              <a href="assets/files/CV_Ranym_Mejri_FR_EN.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open full CV" title="Open full CV"><i class="bi bi-box-arrow-up-right"></i></a>
+              <button type="button" data-resume-fullscreen aria-label="Open fullscreen" title="Fullscreen"><i class="bi bi-arrows-fullscreen"></i></button>
             </div>
           </div>
         </div>
@@ -240,7 +238,7 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/js/i18n.js?v=20260927-3"></script>
-  <script src="assets/js/resume-viewer.js?v=20260927-1"></script>
+  <script src="assets/js/resume-viewer.js?v=20260927-2"></script>
   <script src="assets/js/main.js?v=20260927-1"></script>
 </body>
 
