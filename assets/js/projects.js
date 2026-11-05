@@ -12,9 +12,9 @@
       categoryLabel: "Cloud & DevOps",
       context: "FelCloud internship",
       period: "Jul - Sep 2026",
-      short: "A production platform deployed across three FelCloud VMs with automated delivery, observability and tested recovery.",
-      overview: "TalentHub is an IEEE project management platform deployed on FelCloud across separate bastion, application and PostgreSQL virtual machines. The production architecture runs ten containerized services behind a private network and Caddy load balancing.",
-      role: "I owned the Cloud and DevOps workstream within a three-person team, from infrastructure automation to deployment, monitoring and recovery.",
+      short: "TalentHub deployed across three FelCloud VMs with ten Docker containers, automated delivery, observability and tested recovery.",
+      overview: "TalentHub is an IEEE platform deployed on FelCloud across separate bastion, application and PostgreSQL virtual machines. Its private-network architecture runs ten Docker containers with Caddy load balancing and Prometheus, Grafana and Alertmanager monitoring.",
+      role: "I designed the self-service Review Apps prototype and contributed to production deployment, delivery automation, observability and recovery.",
       images: [
         "assets/img/projects/talenthub-architecture.png",
         talentBase + "talenthub-01-product home app.png",
@@ -25,12 +25,12 @@
         talentBase + "talenthub-06-backup-recovery.png"
       ],
       imageLabels: ["Production architecture and DevOps workflow", "Product home", "Project workflow", "Continuous integration", "Continuous deployment", "Prometheus monitoring", "Backup and recovery"],
-      technologies: ["FelCloud", "Podman", "GitLab CI/CD", "GitHub Actions", "Docker", "Caddy", "Prometheus", "OpenStack Swift", "PostgreSQL"],
+      technologies: ["FelCloud", "Buildah", "Podman", "GitHub Actions", "Docker", "GHCR", "Caddy", "Prometheus", "Grafana", "Alertmanager", "OpenStack Swift", "PostgreSQL"],
       highlights: [
-        "Configured a self-hosted GitLab Runner with Podman for ephemeral development environments.",
-        "Automated quality gates, image delivery, migrations, health validation and rollback.",
-        "Implemented Prometheus, Grafana and Alertmanager across seven observability services.",
-        "Validated PostgreSQL backups and restores on OpenStack Swift with SHA-256 integrity checks."
+        "Built self-service Review Apps on self-hosted GitLab using Buildah and on-demand Podman environments.",
+        "Automated quality checks, GHCR image delivery, migrations, health checks and readiness gates with GitHub Actions.",
+        "Deployed ten Docker containers across three FelCloud VMs with Caddy load balancing and observability.",
+        "Tested automatic rollback and PostgreSQL recovery from OpenStack Swift backups verified with SHA-256."
       ],
       links: []
     },
@@ -40,10 +40,10 @@
       category: "cloud",
       categoryLabel: "Cloud & Full-Stack",
       context: "SQU internship · Oman",
-      period: "Jun - Jul 2026",
+      period: "May - Jun 2026",
       short: "A traceable final-year project evaluation platform containerized and deployed on Microsoft Azure.",
       overview: "The platform centralizes final-year project evaluation and replaces a fragmented Excel and MATLAB workflow. It combines a Spring Boot API, React interface and PostgreSQL database in a reproducible Azure deployment.",
-      role: "I contributed across application engineering, Docker packaging, GitHub Actions, HTTPS deployment and infrastructure handover.",
+      role: "I designed the evaluation platform and handled its Docker packaging, GitHub Actions workflow, HTTPS deployment and infrastructure handover.",
       images: [
         fypBase + "1-live-azure-https-application.png",
         fypBase + "2-github-actions-successful-run.png",
@@ -71,7 +71,7 @@
       period: "Oct 2025 - Jun 2026",
       short: "A hybrid cloud platform combining OpenStack, Kubernetes, Azure delivery and infrastructure observability.",
       overview: "Eco-Resource connects companies exchanging reusable industrial resources. Its hybrid architecture combines an Angular frontend on Azure with a Spring Boot backend running on Kubernetes and OpenStack.",
-      role: "My focus covered private-cloud architecture, Kubernetes automation, CI/CD, observability and role-based Angular workflows.",
+      role: "As part of a team, I contributed to the OpenStack/KVM infrastructure and Kubernetes deployment, participated in hybrid delivery, and developed Angular/Spring Boot features.",
       images: [
         "assets/img/projects/eco-resource/2analytics.jpeg",
         "assets/img/projects/eco-resource/3openstack.png",
@@ -79,12 +79,12 @@
         "assets/img/projects/eco-resource/5grafana.png"
       ],
       imageLabels: ["Operational analytics", "OpenStack infrastructure", "Kubernetes runtime", "Grafana monitoring"],
-      technologies: ["OpenStack", "Kubernetes", "Ansible", "GitLab CI/CD", "Azure", "Prometheus", "Grafana", "Zabbix"],
+      technologies: ["OpenStack", "KVM", "Kubernetes", "Ansible", "GitLab CI/CD", "Azure", "Angular", "Spring Boot", "Prometheus", "Grafana", "Zabbix"],
       highlights: [
-        "Built an OpenStack foundation with isolated networks and persistent storage.",
-        "Automated a multi-node Kubernetes deployment with Ansible.",
-        "Connected the Azure frontend to the Spring Boot backend on Kubernetes.",
-        "Implemented Prometheus, Grafana and Zabbix observability."
+        "Contributed to a private OpenStack/KVM infrastructure with isolated networks and persistent storage.",
+        "Contributed to a multi-node Kubernetes deployment provisioned with Ansible.",
+        "Participated in hybrid delivery across Microsoft Azure and Kubernetes/OpenStack with GitLab CI/CD and monitoring.",
+        "Developed Angular/Spring Boot features for B2B matching, material exchanges and QR-code traceability."
       ],
       links: [
         { label: "Frontend", url: "https://github.com/ranym-eng/eco-ressource-b2b-frontend", icon: "bi-github" },
@@ -109,9 +109,9 @@
       imageLabels: ["Quality dashboard", "Trace investigation", "Secure authentication"],
       technologies: ["Angular", ".NET", "Power BI", "SQL Server"],
       highlights: [
-        "Centralized test results and firmware trace investigation.",
-        "Added authentication, access control and operational workflows.",
-        "Delivered interactive quality monitoring through Power BI."
+        "Built an Angular and .NET solution backed by SQL Server.",
+        "Centralized firmware test results for quality monitoring.",
+        "Delivered Power BI dashboards for quality reporting."
       ],
       links: [
         { label: "Frontend", url: "https://github.com/ranym-eng/test-trace-management-frontend", icon: "bi-github" },
@@ -231,19 +231,19 @@
       categoryLabel: "Cloud & DevOps",
       context: "Stage FelCloud",
       period: "Juil. - Sept. 2026",
-      short: "Une plateforme de production déployée sur trois VM FelCloud avec livraison automatisée, observabilité et restauration testée.",
-      overview: "TalentHub est une plateforme de gestion de projets IEEE déployée sur FelCloud avec des machines virtuelles distinctes pour le bastion, l’application et PostgreSQL. Son architecture de production exécute dix services conteneurisés derrière un réseau privé et un équilibrage de charge Caddy.",
-      role: "J’ai pris en charge le volet Cloud et DevOps au sein d’une équipe de trois personnes, de l’automatisation de l’infrastructure au déploiement, au monitoring et à la restauration.",
+      short: "TalentHub déployé sur trois VM FelCloud avec dix conteneurs Docker, livraison automatisée, observabilité et restauration testée.",
+      overview: "TalentHub est une plateforme IEEE déployée sur FelCloud avec des machines virtuelles distinctes pour le bastion, l’application et PostgreSQL. Son architecture en réseau privé exécute dix conteneurs Docker avec load balancing Caddy et supervision Prometheus, Grafana et Alertmanager.",
+      role: "J’ai conçu le prototype de Review Apps en libre-service et contribué au déploiement en production, à l’automatisation de la livraison, à l’observabilité et à la restauration.",
       imageLabels: ["Architecture de production et workflow DevOps", "Accueil du produit", "Workflow des projets", "Intégration continue", "Déploiement continu", "Monitoring Prometheus", "Sauvegarde et restauration"],
-      highlights: ["Configuration d’un GitLab Runner auto-hébergé avec Podman pour des environnements de développement éphémères.", "Automatisation des contrôles qualité, de la livraison des images, des migrations, de la validation de santé et du rollback.", "Mise en place de Prometheus, Grafana et Alertmanager avec sept services d’observabilité.", "Validation des sauvegardes et restaurations PostgreSQL sur OpenStack Swift avec contrôle d’intégrité SHA-256."]
+      highlights: ["Création de Review Apps en libre-service sur GitLab auto-hébergé avec Buildah et des environnements Podman à la demande.", "Automatisation des contrôles qualité, de la livraison des images GHCR, des migrations, des health checks et des readiness gates avec GitHub Actions.", "Déploiement de dix conteneurs Docker sur trois VM FelCloud avec load balancing Caddy et observabilité.", "Test du rollback automatique et de la restauration PostgreSQL depuis OpenStack Swift avec contrôle SHA-256."]
     },
     "fyp-grading": {
       categoryLabel: "Cloud & Full-Stack",
       context: "Stage SQU · Oman",
-      period: "Juin - Juil. 2026",
+      period: "Mai - Juin 2026",
       short: "Une plateforme traçable d’évaluation des projets de fin d’études, conteneurisée et déployée sur Microsoft Azure.",
       overview: "La plateforme centralise l’évaluation des projets de fin d’études et remplace un processus fragmenté basé sur Excel et MATLAB. Elle réunit une API Spring Boot, une interface React et une base PostgreSQL dans un déploiement Azure reproductible.",
-      role: "J’ai contribué au développement, à la conteneurisation Docker, aux workflows GitHub Actions, au déploiement HTTPS et à la préparation du transfert d’infrastructure.",
+      role: "J’ai conçu la plateforme d’évaluation et pris en charge sa conteneurisation Docker, son workflow GitHub Actions, son déploiement HTTPS et la préparation du transfert d’infrastructure.",
       imageLabels: ["Application en ligne sur Azure", "Pipeline de livraison réussi", "Exécution Docker Compose", "Vérification HTTPS", "Machine virtuelle Azure"],
       highlights: ["Remplacement d’un processus Excel et MATLAB par une évaluation multi-rôle traçable.", "Automatisation de la publication des conteneurs frontend et backend avec GitHub Actions.", "Déploiement d’un environnement Docker Compose supervisé derrière HTTPS."],
       linkLabels: ["Dépôt GitHub"]
@@ -254,9 +254,9 @@
       period: "Oct. 2025 - Juin 2026",
       short: "Une plateforme cloud hybride combinant OpenStack, Kubernetes, Azure et l’observabilité de l’infrastructure.",
       overview: "Eco-Resource connecte les entreprises qui échangent des ressources industrielles réutilisables. Son architecture hybride associe un frontend Angular sur Azure à un backend Spring Boot exécuté sur Kubernetes et OpenStack.",
-      role: "Je me suis concentrée sur l’architecture du cloud privé, l’automatisation Kubernetes, la CI/CD, l’observabilité et les parcours Angular basés sur les rôles.",
+      role: "Au sein d’une équipe, j’ai contribué à l’infrastructure OpenStack/KVM et au déploiement Kubernetes, participé à la livraison hybride et développé des fonctionnalités Angular/Spring Boot.",
       imageLabels: ["Analyses opérationnelles", "Infrastructure OpenStack", "Exécution Kubernetes", "Monitoring Grafana"],
-      highlights: ["Conception d’une infrastructure OpenStack avec réseaux isolés et stockage persistant.", "Automatisation d’un cluster Kubernetes multi-nœuds avec Ansible.", "Connexion du frontend Azure au backend Spring Boot sur Kubernetes.", "Mise en place de l’observabilité avec Prometheus, Grafana et Zabbix."],
+      highlights: ["Contribution à une infrastructure privée OpenStack/KVM avec réseaux isolés et stockage persistant.", "Contribution au déploiement d’un cluster Kubernetes multi-nœuds provisionné avec Ansible.", "Participation à la livraison hybride sur Microsoft Azure et Kubernetes/OpenStack avec GitLab CI/CD et supervision.", "Développement de fonctionnalités Angular/Spring Boot pour la mise en relation B2B, les échanges de matériaux et la traçabilité par QR code."],
       linkLabels: ["Frontend", "Backend"]
     },
     "test-traceability": {
@@ -267,7 +267,7 @@
       overview: "La plateforme offre aux équipes qualité un espace unique pour analyser les traces de tests firmware, suivre les numéros de série et surveiller les indicateurs de production via des tableaux de bord opérationnels et Power BI.",
       role: "J’ai développé les parcours Angular, les services .NET, l’accès aux données SQL Server et le reporting Power BI.",
       imageLabels: ["Tableau de bord qualité", "Analyse des traces", "Authentification sécurisée"],
-      highlights: ["Centralisation des résultats de tests et de l’analyse des traces firmware.", "Ajout de l’authentification, du contrôle d’accès et des workflows opérationnels.", "Création d’un suivi qualité interactif avec Power BI."],
+      highlights: ["Développement d’une solution Angular et .NET basée sur SQL Server.", "Centralisation des résultats des tests firmware pour le suivi qualité.", "Création de tableaux de bord Power BI pour le reporting qualité."],
       linkLabels: ["Frontend", "Backend"]
     },
     gymify: {

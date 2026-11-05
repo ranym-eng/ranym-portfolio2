@@ -1,13 +1,13 @@
 # Ranym Mejri - Cloud & DevOps Portfolio
 
-Personal portfolio showcasing my Cloud, DevOps, platform engineering and software development experience.
+Personal portfolio showcasing my Cloud, DevOps and software development experience.
 
 The website presents my professional profile, resume, internships and selected engineering projects through responsive project cards, dynamic screenshot galleries and dedicated project pages.
 
 ## Highlights
 
 - Cloud and DevOps projects featuring OpenStack, Azure, Kubernetes and CI/CD
-- Internship work completed with FelCloud, Sultan Qaboos University and Sagemcom
+- Internship work completed with FelCloud, Sultan Qaboos University, Sagemcom and BeeCoders
 - Software engineering, web, mobile, AI and data projects
 - Dynamic project galleries with technical summaries and technology stacks
 - Responsive design for desktop, tablet and mobile devices
